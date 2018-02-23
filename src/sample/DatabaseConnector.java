@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 public class DatabaseConnector {
     Connection dbConnection = null;
-    String dbUrl = "jdbc:mysql://post.mobicom.ua:3306/sandboxtwo?useSSL=false";
-    String dbUser = "sanduser";
-    String dbPassword = "sand0852";
+    String dbUrl = "jdbc:mysql://localhost:3306/database?useSSL=false";
+    String dbUser = "login";
+    String dbPassword = "password";
     boolean isCreated = false;
 
     public void updateDatabaseConnectionValues(String url,String username,String password){

@@ -4,3 +4,6 @@
 [2018/02/06 19:22:28] App start
 [2018/02/06 19:23:11] App start
 [2018/02/06 19:23:39] App start
+[2018/02/23 19:08:31] App start
+[2018/02/23 19:08:32] Reading information from database
+[2018/02/23 19:08:36] Done reading database
