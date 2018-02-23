@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="javafxtext:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/javafxtext_jar</output-path>
+    <root id="archive" name="javafxtext.jar">
+      <element id="module-output" name="javafxtext" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/mysql-connector-java-5.1.45-bin.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/icon2.png" />
+    </root>
+  </artifact>
+</component>

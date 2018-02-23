@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="708.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Table Viewer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="8.0" layoutY="8.0" prefHeight="501.0" prefWidth="691.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Settings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="709.0">
+                     <children>
+                        <CheckBox fx:id="columnCB1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" selected="true" text="ID">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                        <CheckBox fx:id="columnCB2" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" selected="true" text="Package Name">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB3" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" selected="true" text="Version">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB4" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" selected="true" text="Proiroty">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB5" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" selected="true" text="Section">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB6" layoutX="118.0" layoutY="10.0" mnemonicParsing="false" selected="true" text="Maintainer">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB7" layoutX="118.0" layoutY="35.0" mnemonicParsing="false" selected="true" text="Install Size">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB8" layoutX="118.0" layoutY="60.0" mnemonicParsing="false" selected="true" text="Download Size">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB9" layoutX="118.0" layoutY="85.0" mnemonicParsing="false" selected="true" text="Depends">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB10" layoutX="118.0" layoutY="110.0" mnemonicParsing="false" selected="true" text="Breaks">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB11" layoutX="226.0" layoutY="10.0" mnemonicParsing="false" selected="true" text="Replaces">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB12" layoutX="226.0" layoutY="35.0" mnemonicParsing="false" selected="true" text="Homepage">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB13" layoutX="226.0" layoutY="60.0" mnemonicParsing="false" selected="true" text="Tag">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB14" layoutX="226.0" layoutY="85.0" mnemonicParsing="false" selected="true" text="APT Sources">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB15" layoutX="226.0" layoutY="110.0" mnemonicParsing="false" selected="true" text="Recommends">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB16" layoutX="334.0" layoutY="10.0" mnemonicParsing="false" selected="true" text="Provides">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB17" layoutX="334.0" layoutY="35.0" mnemonicParsing="false" selected="true" text="Source Name">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB18" layoutX="334.0" layoutY="60.0" mnemonicParsing="false" selected="true" text="Pre-Depends">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB19" layoutX="334.0" layoutY="85.0" mnemonicParsing="false" selected="true" text="Suggests">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                         <CheckBox fx:id="columnCB20" layoutX="334.0" layoutY="110.0" mnemonicParsing="false" selected="true" text="Description">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></CheckBox>
+                        <Button layoutX="439.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonUpdateTableClick" prefHeight="25.0" prefWidth="262.0" text="Update table">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Button>
+                        <Button layoutX="439.0" layoutY="43.0" mnemonicParsing="false" onAction="#buttonSelectAllClick" prefHeight="25.0" prefWidth="262.0" text="Select All">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Button>
+                        <Button layoutX="439.0" layoutY="76.0" mnemonicParsing="false" onAction="#buttonDeselectAllClick" prefHeight="25.0" prefWidth="262.0" text="Deselect All">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Button>
+                         <Button layoutX="439.0" layoutY="109.0" mnemonicParsing="false" onAction="#buttonUpdateFromDatabaseClick" prefHeight="25.0" prefWidth="262.0" text="Reload table from database">
+                             <font>
+                                 <Font name="Free Sans" size="11.0" />
+                             </font></Button>
+                        <TextField fx:id="dbConnectionField" layoutX="180.0" layoutY="143.0" prefHeight="25.0" prefWidth="520.0">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></TextField>
+                        <TextField fx:id="dbUserField" layoutX="180.0" layoutY="180.0" prefHeight="25.0" prefWidth="520.0">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></TextField>
+                         <PasswordField fx:id="dbPassField" layoutX="180.0" layoutY="217.0" prefHeight="25.0" prefWidth="520.0">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></PasswordField>
+                         <Label layoutX="20.0" layoutY="147.0" text="Database Connection String:">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                        <Label layoutX="55.0" layoutY="185.0" text="Database Username:">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                        <Label layoutX="57.0" layoutY="222.0" text="Database Password:">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                        <Button layoutX="10.0" layoutY="255.0" mnemonicParsing="false" onAction="#buttonUpdateDBClick" prefHeight="25.0" prefWidth="339.0" text="Update Database Connection Info">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Button>
+                        <Button layoutX="361.0" layoutY="255.0" mnemonicParsing="false" onAction="#buttonCreateDBClick" prefWidth="339.0" text="Create And Fill Database">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Button>
+                        <Label layoutX="408.0" layoutY="282.0" text="(this may take a long time, so prepare you tea)">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="459.0" text="WARNING: This program uses default linux apt command, so it will not work if you do not have apt installed.">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="493.0" text="Created and developed by Andrew Slobodyanuk: github.com/aslobodyanuk">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                        <Label layoutX="10.0" layoutY="476.0" text="In order to use this app you need to install database server and provide connection data.">
+                           <font>
+                              <Font name="Free Sans" size="11.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Log">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="logTextArea" editable="false" layoutX="7.0" layoutY="8.0" prefHeight="503.0" prefWidth="694.0">
+                           <font>
+                              <Font name="Free Sans" size="13.0" />
+                           </font></TextArea>
+                     </children></AnchorPane>
+                </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ProgressIndicator fx:id="pi1" centerShape="false" layoutX="8.0" layoutY="533.0" prefHeight="40.0" prefWidth="19.0" stylesheets="@style.css" />
+       <ProgressIndicator fx:id="pi2" layoutX="8.0" layoutY="544.0" prefHeight="40.0" prefWidth="19.0" progress="1.0" stylesheets="@style.css" />
+      <Label fx:id="progressLabel" layoutX="33.0" layoutY="544.0" text="Here will be displayed progress status.">
+         <font>
+            <Font name="Free Sans" size="13.0" />
+         </font></Label>
+   </children>
+</Pane>
